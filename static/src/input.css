@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply rounded-full cursor-pointer text-xl text-zinc-400 font-supermolot bg-zinc-800 transition hover:bg-red-800 hover:text-zinc-800 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
+}
+
+.sun {
+  @apply rounded-full cursor-pointer text-zinc-400 font-supermolot bg-zinc-800 transition hover:bg-white hover:text-yellow-400 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
+}
+
+.onepxline {
+  border-bottom: 1px solid #343438;
+}
+
+@font-face {
+  font-family: 'TT Supermolot Neue Exp DBold';
+  src: url('../fonts/supermolot/TTSupermolotNeue-ExpDBold.woff');
+}
+
+/* npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch */
+
