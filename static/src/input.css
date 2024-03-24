@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  @apply rounded-full cursor-pointer text-xl text-zinc-400 font-supermolot bg-zinc-800 transition hover:bg-red-800 hover:text-zinc-800 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
+.btn-secondary {
+  @apply rounded-full cursor-pointer tracking-wide text-base text-zinc-400 font-supermolot bg-zinc-800 transition hover:bg-red-800 hover:text-zinc-800 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
 }
 
+/* .btn-primary {
+  @apply rounded-full cursor-pointer text-md text-zinc-400 font-supermolot bg-blue-900 transition hover:bg-red-800 hover:text-zinc-800 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
+} */
+
 .sun {
-  @apply rounded-full cursor-pointer text-zinc-400 font-supermolot bg-zinc-800 transition hover:bg-white hover:text-yellow-400 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
+  @apply rounded-full cursor-pointer text-zinc-400 font-supermolot bg-zinc-800 transition hover:bg-blue-500 hover:text-yellow-400 hover:scale-125 hover:transition hover:duration-300 hover:justify-center
 }
 
 .onepxline {
-  border-bottom: 1px solid #343438;
+  border-bottom: 1px solid #222224;
 }
 
 @font-face {
