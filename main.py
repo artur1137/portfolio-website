@@ -1,7 +1,8 @@
-from flask import Flask, render_template, redirect, session, url_for, request
+from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'fd7a9fh342w9fh78fghdsgodsfy8fhdfso'
+app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
 
 
 @app.route('/')

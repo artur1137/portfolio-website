@@ -560,16 +560,16 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.col-start-5 {
-  grid-column-start: 5;
+.col-start-6 {
+  grid-column-start: 6;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.ml-8 {
+  margin-left: 2rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
+.mr-16 {
+  margin-right: 4rem;
 }
 
 .flex {
@@ -606,18 +606,32 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.justify-center {
-  justify-content: center;
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
-.bg-slate-100 {
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-zinc-950 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(9 9 11 / var(--tw-border-opacity));
+}
+
+.bg-blue-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .px-2 {
@@ -653,7 +667,6 @@ video {
   font-family: "TT Supermolot Neue Exp DBold";
   font-size: 1.5rem;
   line-height: 2rem;
-  letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
 }
@@ -723,12 +736,19 @@ video {
   transition-duration: 300ms;
 }
 
-.px-line-dark {
+#px-line-dark {
   border-bottom: 1px solid #222224;
+  transition: border-bottom 0.5s ease-in-out;
 }
 
-.px-line-light {
+#px-line-light {
   border-bottom: 1px solid #dbd8e4;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+#navbar {
+  transition: 0.5s ease-in-out;
+  border-bottom: 1px solid #222224;
 }
 
 @font-face {
@@ -738,13 +758,21 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:col-start-5 {
-    grid-column-start: 5;
+  .md\:col-start-6 {
+    grid-column-start: 6;
   }
 
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:mr-8 {
+    margin-right: 2rem;
   }
 
   .md\:flex {
@@ -759,10 +787,6 @@ video {
     --tw-scale-x: .75;
     --tw-scale-y: .75;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:justify-center {
-    justify-content: center;
   }
 
   .md\:justify-between {
@@ -781,20 +805,19 @@ video {
     margin-right: 8rem;
   }
 
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:scale-100 {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-
-  .lg\:scale-y-100 {
-    --tw-scale-y: 1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
 }
 
-.dark\:block:where(.dark, .dark *) {
-  display: block;
+.dark\:ml-8:where(.dark, .dark *) {
+  margin-left: 2rem;
 }
 
 .dark\:flex:where(.dark, .dark *) {
@@ -805,12 +828,17 @@ video {
   display: none;
 }
 
-.dark\:bg-zinc-900:where(.dark, .dark *) {
+.dark\:bg-blue-700:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-zinc-950:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-zinc-900:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }

@@ -6,7 +6,6 @@
   @apply
   rounded-full
   cursor-pointer
-  tracking-wide
   text-2xl
   font-supermolot
   hover:scale-125
@@ -46,13 +45,21 @@
 }
 
 
-.px-line-dark {
+#px-line-dark {
+  border-bottom: 1px solid #222224;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+#px-line-light {
+  border-bottom: 1px solid #dbd8e4;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+#navbar {
+  transition: 0.5s ease-in-out;
   border-bottom: 1px solid #222224;
 }
 
-.px-line-light {
-  border-bottom: 1px solid #dbd8e4;
-}
 
 @font-face {
   font-family: 'TT Supermolot Neue Exp DBold';

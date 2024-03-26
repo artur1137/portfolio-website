@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-slate-200 dark:bg-zinc-950">
+<!-- <html lang="en" class="bg-slate-200 dark:bg-zinc-950"> -->
+<html lang="en" class="bg-blue-400 dark:bg-blue-700"></html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +11,9 @@
 
     <!-- navbar -->
     <nav class="fixed w-full">
-      <div class="grid grid-cols-5 py-4 bg-slate-100 dark:bg-zinc-900">
+      <div id="navbar" class="grid grid-cols-5 py-4">
         <!-- moon btn -->
-        <div class="col-span-1 flex dark:hidden justify-center ml-10 scale-110 md:scale-75 lg:scale-100">
+        <div class="col-span-1 flex dark:hidden justify-left ml-8 scale-110 md:scale-75 lg:scale-100">
           <button type="button" class="moon px-2 md:px-1 toggle-dark">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
@@ -20,7 +21,7 @@
           </button>
         </div>
         <!-- sun btn -->
-        <div class="col-span-1 hidden dark:flex justify-center ml-10 scale-110 md:scale-75 lg:scale-100">
+        <div class="col-span-1 hidden dark:flex dark:justify-left dark:ml-8 scale-110 md:scale-75 md:ml-0 lg:scale-100 lg:ml-0">
           <button type="button" class="sun px-2 md:px-1 toggle-light">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6">
               <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -28,11 +29,11 @@
           </button>
         </div>
         <!-- 3 main buttons -->
-        <div class="col-span-3 hidden md:flex md:justify-between md:mx-12 md:scale-75 lg:mx-32 lg:scale-y-100">
-          <button type="button", class="btn px-5">
+        <div class="col-span-3 hidden md:flex md:justify-between md:mx-12 md:scale-75 lg:mx-32 lg:scale-100">
+          <button type="button", class="btn px-5 mr-16">
             <span>Home</span>
           </button>
-          <button type="button", class="btn px-5">
+          <button type="button", class="btn px-5 mr-16">
             <span>About</span>
           </button>
           <button type="button", class="btn px-5">
@@ -40,7 +41,7 @@
           </button>
         </div>
         <!-- hamburger menu -->
-        <div class="col-start-5 flex justify-center mr-10 md:hidden">
+        <div class="col-start-6 flex justify-right mr-16 md:hidden">
           <button type="button" class="btn px-2 py-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
@@ -48,7 +49,7 @@
           </button>
         </div>
         <!-- socials icons -->
-        <div class="hidden md:flex md:col-start-5 md:justify-center md:scale-75 lg:scale-100">
+        <div class="hidden md:flex md:col-start-6 md:justify-right md:mr-8 md:scale-75 lg:scale-100">
           <button type="button">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48">
@@ -65,8 +66,8 @@
           </button>
         </div>
       </div>
-      <div class="px-line-dark hidden dark:block"></div>
-      <div class="px-line-light dark:hidden"></div>
+      <div id="px-line-dark" class="hidden"></div>
+      <div id="px-line-light" class="hidden dark:hidden"></div>
     </nav>
 
     <p class="text-sm">
@@ -128,37 +129,8 @@
       .<br>
       .<br>
       .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
-      .<br>
     </p>
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="{{ url_for('static', filename='index.js') }}"></script>
-    <script src="{{ url_for('static', filename='dark-mode.js') }}"></script>
+    
+    <script src="{{ url_for('static', filename='src/JS/index.js') }}"></script>
   </body>
 </html>
