@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         supermolot: ['"TT Supermolot Neue Exp DBold"']
       },
+    
+      colors: {
+        '#222224': '#222224',
+      }
     },
   },
   plugins: [],

@@ -7,7 +7,6 @@ app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
 
 @app.route('/')
 def home():
-
     return render_template('index.html')
 
 
