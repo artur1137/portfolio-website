@@ -48,3 +48,20 @@
         }
     });
 })();
+
+// Extend navbar menu
+(function(){
+    const menu = document.getElementById('nav-menu');
+    const btn = document.getElementById('btn-menu')
+    const toggle_menu = document.querySelector('.toggle-menu')
+
+    toggle_menu.addEventListener('click', function () {
+        menu.classList.toggle('hidden');
+        btn.classList.toggle('btn-nav');
+        btn.classList.toggle('rounded-full');
+        btn.classList.toggle('scale-125');
+        btn.classList.toggle('bg-emerald-300');
+        btn.classList.toggle('dark:bg-red-700');
+        btn.classList.toggle('dark:text-zinc-800');
+    });
+})();
